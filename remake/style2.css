@@ -1,2 +1,47 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+:root{
+    --fondo: rgb(49, 49, 49);
+    --figura: rgb(255, 166, 0);
+}
+
+.active{
+    font-weight:15px ;
+    color: white ;
+    text-decoration: underline;
+}
+
+* {
+    transition: all ease 0.5s;
+    margin: 0;
+    padding: 0;
+}
+:hover {
+    transition: all ease 0.5s;
+}
+body {
+    background: #222;
+    font-family: 'Krona One', sans-serif, Helvetica, Arial;
+    background: var(--fondo);
+    color: var(--figura);
+}
+
+body.portada{
+    background:var(--fondo) url('images/Fondo5.jpg') center;
+    background-size: 130%;
+    background-attachment: fixed;
+}
+
+/* para las páginas de locaciones y ganancias */
+
+main div#mapa{
+    margin:1%;
+    width:98%;
+    height:60vh;
+}
+
+main canvas#grafico{
+    background:rgba(0, 0, 0, 0.459);
+}
